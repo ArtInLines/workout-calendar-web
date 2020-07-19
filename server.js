@@ -35,9 +35,9 @@ app.get('/', (req, res) => {
 		const user = await getUser(userName, false);
 		if (!user) {
 			res.redirect('/');
-		} else {
-			res.sendFile(`${publicPath}/user.html`);
+			return;
 		}
+		res.sendFile(`${publicPath}/user.html`);
 	})
 	.get('/:userName/programme', (req, res) => {
 		res.redirect(`/${req.params.userName}/program`);
