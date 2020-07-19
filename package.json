@@ -12,6 +12,10 @@
 	},
 	"author": "artinlines",
 	"license": "MIT",
+	"repository": {
+		"url": "https://www.github.com/ArtInLines/workout-calendar-web",
+		"type": "git"
+	},
 	"dependencies": {
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
